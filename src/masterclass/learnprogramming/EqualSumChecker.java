@@ -1,3 +1,5 @@
+/* Section 4 : Coding Exercise 6: Equal Sum Checker */
+
 package masterclass.learnprogramming;
 
 public class EqualSumChecker {

@@ -1,3 +1,5 @@
+/* Section 4 : Coding Exercise 3: Barking Dog */
+
 package masterclass.learnprogramming;
 
 public class BarkingDog {

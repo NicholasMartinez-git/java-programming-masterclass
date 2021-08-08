@@ -1,6 +1,6 @@
-package masterclass.learnprogramming;
+/* Section 4 : Coding Exercise 5: Decimal Comparator */
 
-import java.text.DecimalFormat;
+package masterclass.learnprogramming;
 
 public class DecimalComparator {
     public static void main(String[] args) {
