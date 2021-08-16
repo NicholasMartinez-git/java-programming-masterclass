@@ -1,3 +1,5 @@
+/* Section 4 : Coding Exercise 10: Equality Printer */
+
 package masterclass.learnprogramming;
 
 public class EqualityPrinter {

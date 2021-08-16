@@ -1,3 +1,5 @@
+/* Section 4 : Coding Exercise 8: Area Calculator */
+
 package masterclass.learnprogramming;
 
 public class AreaCalculator {
