@@ -1,3 +1,5 @@
+/* Section 5 : Coding Exercise 19: LastDigitChecker */
+
 package masterclass.learnprogramming;
 
 public class LastDigitChecker {

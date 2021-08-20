@@ -1,3 +1,5 @@
+/* Section 5 : Coding Exercise 18: Shared Digit */
+
 package masterclass.learnprogramming;
 
 public class SharedDigit {
