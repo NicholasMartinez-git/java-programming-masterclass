@@ -2,6 +2,8 @@
 
 package masterclass.learnprogramming;
 
+import java.util.spi.CalendarNameProvider;
+
 public class FlourPackProblem {
     public static void main(String[] args) {
         System.out.println(canPack(2, 0, 9));
@@ -14,6 +16,7 @@ public class FlourPackProblem {
         System.out.println(canPack(-3, 2, 12));
 
         System.out.println(canPack(2, 1, 5));
+        System.out.println(canPack(4, 18, 19));
     }
 
     public static boolean canPack(int bigCount, int smallCount, int goal) {
@@ -21,23 +24,12 @@ public class FlourPackProblem {
         // bigFlourBag = 5 kilos per
         // smallFlourBag = 1 kilo per
 
-        int bigFlourBagsWeight = bigCount * 5;
-        int totalFlourBagsWeight = bigFlourBagsWeight + smallCount;
-        int remainingFlourBagsWeight = 0;
-        boolean usedAllBigFlourBagsFirst = false;
-        boolean canPack = false;
+        int totalFlourBagsWeight = (5 * bigCount) + smallCount;
 
         if (bigCount < 0 || smallCount < 0 || goal < 0) {
             return false;
         }
 
-        if (totalFlourBagsWeight > goal && bigCount > 0) {
-            remainingFlourBagsWeight = goal - bigFlourBagsWeight;
-            usedAllBigFlourBagsFirst = remainingFlourBagsWeight >= 0;
-        }
-        
-        if (usedAllBigFlourBagsFirst)
-
-        return canPack;
+        return ((totalFlourBagsWeight >= goal) && (goal % 5 <= smallCount));
     }
 }
