@@ -1,3 +1,5 @@
+/* Section 5 : Coding Exercise 26: Diagonal Star */
+
 package masterclass.learnprogramming;
 
 public class DiagonalStar {
