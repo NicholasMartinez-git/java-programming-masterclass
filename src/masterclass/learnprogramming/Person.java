@@ -1,3 +1,5 @@
+/* Section 6 : Coding Exercise 30: Person */
+
 package masterclass.learnprogramming;
 
 public class Person {

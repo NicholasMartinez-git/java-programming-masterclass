@@ -1,3 +1,5 @@
+/* Section 6 : Coding Exercise 29: Sum Calculator */
+
 package masterclass.learnprogramming.sumcalculator;
 
 public class SimpleCalculator {
