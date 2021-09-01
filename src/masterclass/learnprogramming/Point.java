@@ -1,3 +1,5 @@
+/* Section 6 : Coding Exercise 32: Point */
+
 package masterclass.learnprogramming;
 
 public class Point {

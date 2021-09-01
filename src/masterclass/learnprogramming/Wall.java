@@ -1,3 +1,5 @@
+/* Section 6 : Coding Exercise 31: Wall Area */
+
 package masterclass.learnprogramming;
 
 public class Wall {
