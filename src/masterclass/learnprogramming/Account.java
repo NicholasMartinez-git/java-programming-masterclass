@@ -94,7 +94,7 @@ public class Account {
     }
 
     public void withdrawFunds(double funds) {
-        if (accountBalance < funds) {
+        if (accountBalance - funds < 0) {
             System.out.println("Insufficient Funds");
         } else {
             System.out.println("Previous balance = " + "$" + accountBalance);
