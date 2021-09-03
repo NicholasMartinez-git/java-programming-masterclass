@@ -8,50 +8,48 @@ public class Floor {
     }
 
     private double width;
-    private double height;
+    private double length;
 
-    public Floor() {}
-
-    public Floor(double width, double height) {
+    public Floor(double width, double length) {
         if (width < 0) {
             width = 0;
         }
 
-        if (height < 0) {
-            height = 0;
+        if (length < 0) {
+            length = 0;
         }
 
         this.width = width;
-        this.height = height;
+        this.length = length;
     }
 
-    public double getWidth() {
-        return width;
-    }
-
-    public void setWidth(double width) {
-
-        if (width < 0) {
-            width = 0;
-        }
-
-        this.width = width;
-    }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public void setHeight(double height) {
-
-        if (height < 0) {
-            height = 0;
-        }
-
-        this.height = height;
-    }
+//    public double getWidth() {
+//        return width;
+//    }
+//
+//    public void setWidth(double width) {
+//
+//        if (width < 0) {
+//            width = 0;
+//        }
+//
+//        this.width = width;
+//    }
+//
+//    public double getHeight() {
+//        return height;
+//    }
+//
+//    public void setHeight(double height) {
+//
+//        if (height < 0) {
+//            height = 0;
+//        }
+//
+//        this.height = height;
+//    }
 
     public double getArea() {
-        return height * width;
+        return length * width;
     }
 }
