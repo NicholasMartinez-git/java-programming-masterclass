@@ -1,3 +1,5 @@
+/* Section 6 : Coding Exercise 33: Carpet Cost Calculator */
+
 package masterclass.learnprogramming.carpetcostcalculator;
 
 public class Calculator {
