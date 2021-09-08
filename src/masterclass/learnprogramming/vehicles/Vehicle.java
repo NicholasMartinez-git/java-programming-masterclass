@@ -3,27 +3,19 @@
 package masterclass.learnprogramming.vehicles;
 
 public class Vehicle {
-    private String make;
-    private String model;
-    private int year;
-    private int speed;
-    private int direction;
-    private boolean motorized;
-    private boolean cargo;
-    private boolean moving;
 
-    public Vehicle(String make, String model, int year, boolean motorized, boolean cargo) {
-        this.make = make;
-        this.model = model;
-        this.year = year;
+    private String name;
+    private int speed;
+    private double direction;
+    private boolean cargo;
+
+    public Vehicle(boolean cargo) {
         this.speed = 0;
         this.direction = 0;
-        this.motorized = motorized;
         this.cargo = cargo;
-        this.moving = false;
     }
 
-    public void steer(int direction) {
+    public void steer(double direction) {
         System.out.println("Vehicle.steer() called.");
 
         /*
@@ -31,40 +23,62 @@ public class Vehicle {
          * and when the angle is specified we can write an if-else statement declaring what cardinal direction the vehicle is moving.
          *
          * */
-    }
 
-    public void moving() {
-
-    }
-
-    // Speed up the motorized vehicle
-    public void changeGearUp(int speed) {
-        System.out.println("Vehicle.changeGearUp() called.");
-        System.out.println("Vehicles gears have been shifted up");
-        speed += 10;
-    }
-
-    // Slow down the motorized vehicle
-    public void changeGearDown(int speed) {
-        System.out.println("Vehicle.changeGearDown() called.");
-        System.out.println("Vehicles gears have been shifted down");
-        speed -= 10;
-    }
-
-    public void checkSpeed(int speed) {
-        if (speed <= 0) {
-            moving = false;
+        if (direction < 0 || direction > 360) {
+            System.out.println("Invalid direction!");
+        } else if (direction == 0 || direction == 360) {
+            System.out.println("0\u00B0 N");
+        } else if (direction == 45) {
+            System.out.println("45\u00B0 NE");
+        } else if (direction < 45) {
+            System.out.println(direction + "\u00B0 NNE");
+        } else if (direction == 90) {
+            System.out.println("90\u00B0 E");
+        } else if (direction > 45 && direction < 90) {
+            System.out.println(direction + "\u00B0 ENE");
+        } else if (direction == 135) {
+            System.out.println("135\u00B0 SE");
+        } else if (direction > 90 && direction < 135) {
+            System.out.println(direction + "\u00B0 ESE");
+        } else if (direction == 180) {
+            System.out.println("180\u00B0 S");
+        } else if (direction > 135 && direction < 180) {
+            System.out.println(direction + "\u00B0 SSE");
+        } else if (direction == 225) {
+            System.out.println("225\u00B0 SW");
+        } else if (direction > 180 && direction < 225) {
+            System.out.println(direction + "\u00B0 SSW");
+        } else if (direction == 270) {
+            System.out.println("270\u00B0 W");
+        } else if (direction > 225 && direction < 270) {
+            System.out.println(direction + "\u00B0 WSW");
+        } else if (direction == 315) {
+            System.out.println("315\u00B0 NW");
+        } else if (direction > 270 && direction < 315) {
+            System.out.println(direction + "\u00B0 WNW");
+        } else if (direction > 315) {
+            System.out.println(direction + "\u00B0 NNW");
         }
+
+        this.direction += direction;
     }
 
-    public void startMotor() {
-        System.out.println("Vehicle.startMotor() called.");
-        System.out.println("Motor has been TURNED ON!");
+    public void move(double direction, int speed) {
+        System.out.println("Vehicle.move() called.");
+
+        /*
+         * All vehicles start from a rest position. In order to move we have to add speed to the vehicle.
+         * So by adding an accelerated method to show speeding up while indicating a direction
+         * we display the vehicle moving.
+         *
+         * accelerate(int speed)
+         * steer(double direction)
+         *
+         * */
+
     }
 
-    public void stopMotor() {
-        checkSpeed(speed);
-        System.out.println("Vehicle.stopMotor() called.");
-        System.out.println("Motor has been TURNED OFF!");
+    public void accelerate(int speed) {
+        this.speed += speed;
     }
 }
