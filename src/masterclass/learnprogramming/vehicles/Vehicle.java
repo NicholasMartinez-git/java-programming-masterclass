@@ -4,7 +4,6 @@ package masterclass.learnprogramming.vehicles;
 
 public class Vehicle {
 
-    private String name;
     private int speed;
     private double direction;
     private boolean cargo;
@@ -71,14 +70,54 @@ public class Vehicle {
          * So by adding an accelerated method to show speeding up while indicating a direction
          * we display the vehicle moving.
          *
-         * accelerate(int speed)
-         * steer(double direction)
-         *
          * */
+
+        accelerate(speed);
+        steer(direction);
 
     }
 
     public void accelerate(int speed) {
+
+        // If the accelerate method is passed a negative number then the vehicle will be slowing down instead of speeding up
+
+        System.out.println("Vehicle.accelerate() called.");
         this.speed += speed;
+        if (this.speed <= 0) {
+            stop();
+        }
+    }
+
+    public void stop() {
+        System.out.println("Vehicle.stop() called.");
+        this.speed = 0;
+    }
+
+
+
+    // Getters and Setters
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public double getDirection() {
+        return direction;
+    }
+
+    public void setDirection(double direction) {
+        this.direction = direction;
+    }
+
+    public boolean isCargo() {
+        return cargo;
+    }
+
+    public void setCargo(boolean cargo) {
+        this.cargo = cargo;
     }
 }
