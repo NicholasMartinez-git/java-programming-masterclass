@@ -1,3 +1,5 @@
+/* Section 6 : Video 88: Inheritance Challenge Part 1 & 2 */
+
 package masterclass.learnprogramming.vehicles;
 
 public class Car extends Vehicle {
