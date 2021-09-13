@@ -1,3 +1,5 @@
+/* Section 7 : Coding Exercise 37: Composition */
+
 package masterclass.learnprogramming.compostionexercise;
 
 public class Lamp {
@@ -13,7 +15,7 @@ public class Lamp {
     }
 
     public void turnOn() {
-        System.out.println("Lamp is being turned ON!");
+        System.out.println("Lamp -> Turning on");
     }
 
     public String getStyle() {
