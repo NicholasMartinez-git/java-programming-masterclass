@@ -25,14 +25,14 @@ public class Car {
     }
 
     public String startEngine() {
-        return "The car's engine is starting.";
+        return "Car -> startEngine()";
     }
 
     public String accelerate() {
-        return "The car is accelerating";
+        return "Car -> accelerate()";
     }
 
     public String brake() {
-        return "The car is braking";
+        return "Car -> brake()";
     }
 }
