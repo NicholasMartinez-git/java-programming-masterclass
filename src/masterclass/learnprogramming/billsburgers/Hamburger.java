@@ -30,23 +30,27 @@ public class Hamburger {
     }
 
     public void addHamburgerAddition1(String nameAddOn, double priceAddOn) {
-
+        price += priceAddOn;
+        System.out.println("Added " + nameAddOn + " for an extra $" + String.format("%.2f", priceAddOn));
     }
 
     public void addHamburgerAddition2(String nameAddOn, double priceAddOn) {
-
+        price += priceAddOn;
+        System.out.println("Added " + nameAddOn + " for an extra $" + String.format("%.2f", priceAddOn));
     }
 
     public void addHamburgerAddition3(String nameAddOn, double priceAddOn) {
-
+        price += priceAddOn;
+        System.out.println("Added " + nameAddOn + " for an extra $" + String.format("%.2f", priceAddOn));
     }
 
     public void addHamburgerAddition4(String nameAddOn, double priceAddOn) {
-
+        price += priceAddOn;
+        System.out.println("Added " + nameAddOn + " for an extra $" + String.format("%.2f", priceAddOn));
     }
 
     public double itemizeHamburger() {
         // add up all "additions" of the hamburger and return the total price
-        return totalPrice;
+        return price;
     }
 }
