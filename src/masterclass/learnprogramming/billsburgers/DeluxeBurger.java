@@ -1,3 +1,5 @@
+/* Section 7 : Coding Exercise 40: Bill's Burgers */
+
 package masterclass.learnprogramming.billsburgers;
 
 public class DeluxeBurger extends Hamburger{
