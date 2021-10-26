@@ -1,4 +1,4 @@
-/* Section 7 : Coding Exercise 41: Sorted Array */
+/* Section 8 : Coding Exercise 41: Sorted Array */
 
 package masterclass.learnprogramming;
 

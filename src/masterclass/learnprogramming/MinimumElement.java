@@ -1,4 +1,4 @@
-/* Section 7 : Coding Exercise 42: Minimum Element */
+/* Section 8 : Coding Exercise 42: Minimum Element */
 
 package masterclass.learnprogramming;
 
